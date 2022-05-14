@@ -1,0 +1,31 @@
+<main class="main" id="main">
+
+  <div class="header-con">
+    <h1 class="heading" id="pageTitle">{{ title }}</h1>
+    <h1 class="heading">{{ subTitle }}</h1>
+  </div>
+
+  <div class="container-log" id="container-log">
+    <form [action]="usersForm.formUrl" id="login-form" method="post">
+      <label for=""><i class="fas fa fa-user-o"> </i> Username :</label>
+      <input type="text" name="username" id="userId" placeholder="Username" required /><br />
+      <label for=""><i class="fas fa fa-lock"> </i> Password :</label>
+      <input type="password"
+              name="userPassword"
+              id="passId"
+              [(ngModel)] = "usersForm.password"
+              placeholder="Password" required />
+      <button [type]="usersForm.submit"
+              id="btn-submit">
+              <i class="fas fa fa-sign-in"></i> Login</button>
+              <!-- <button id="btn-submit" type="reset">
+                <i class="fas fa fa-eraser"></i> Clear</button> -->
+              <!-- *ngIf="showButton1" (keypress) = "toggleButton()" -->
+    </form>
+
+    <label
+      for="password-reset">forgot password? </label
+    ><a href="http://" id="resetPass">click here</a>
+  </div>
+</main>
+
