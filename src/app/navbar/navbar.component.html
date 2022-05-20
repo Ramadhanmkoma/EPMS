@@ -1,23 +1,24 @@
-<nav class="navbar" id="nav-bar">
-  <ul class="list-container">
-    <span class="navicon" id="navicon"><i class="fas fa fa-navicon"></i></span>
-    <h4 style="text-align: center; margin: 1.7em 0; color: #f66">
-      <i class="fas fa fa-bar-chart-o"> </i> EPMS <i class="fas fa fa-group"> </i>
-    </h4>
-    <li class="lists" id="list1"><a href="http://">
-      <i class="fas fa fa-home"> </i> {{ navMenu.home | uppercase }}</a>
+
+<nav class="nav-bar" id="nav-bar">
+  <ul class="list-con" id="list-con">
+    <div class="epms" draggable="true">
+      <i class="fas fa fa-bar-chart"></i> EPMS</div>
+    <li class="list-menu"><a routerLink="/home">
+      <i class="fas fa fa-bar-chart"></i> Home</a>
     </li>
-    <li class="lists" id="list1"><a href="http://">
-      <i class="fas fa fa-book"> </i> {{ navMenu.services }}</a>
+    <li class="list-menu"><a routerLink="/evaluate">
+      <i class="fas fa fa-pie-chart"></i> Evaluate</a>
     </li>
-    <li class="lists" id="list1"><a href="http://">
-      <i class="fas fa fa-cube"> </i> {{ navMenu.about }}</a>
+    <li class="list-menu"><a routerLink="/report">
+      <i class="fas fa fa-feed"></i> Report</a>
     </li>
-    <li class="lists" id="list1">
-      <a href="http://"><i class="fas fa fa-comments"> </i> {{ navMenu.comments }}</a>
+    <li class="list-menu"><a routerLink="/comment">
+      <i class="fas fa fa-comment"></i> Leave us a Message</a>
     </li>
-    <li class="lists" id="list1">
-      <a href="http://"><i class="fas fa fa-group"> </i> {{ navMenu.tips }}</a>
+    <li class="list-menu"><a href="#">
+      <i class="fas fa fa-phone"></i> Help</a></li>
+    <li class="list-menu"><a href="#">
+      <i class="fas fa fa-toggle-off"></i> Mode</a>
     </li>
   </ul>
 </nav>

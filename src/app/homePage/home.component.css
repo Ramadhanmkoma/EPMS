@@ -1,0 +1,12 @@
+.home-sec {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.user-details { display: grid; grid: repeat(auto-flow, 1fr) / repeat(auto-fit, 20em); }
+
+.box {
+    background-color: rgba(167, 203, 239, 0.7);
+}

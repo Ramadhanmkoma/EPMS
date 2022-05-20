@@ -10,57 +10,6 @@
   <body class="" id="bdy">
     <epm-root></epm-root>
 
-    <script src="./app/javascript.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let navBar = document.getElementById("nav-bar"),
-          navIcon = document.getElementById("navicon"),
-          mainSec = document.getElementById("epm-login");
-
-        // let toggleSwitch = true;
-        // if (toggleSwitch == true) {
-        navIcon.addEventListener("click", function () {
-          navBar.classList.add("offToggle");
-          mainSec.classList.add("toggleMain");
-          // toggleSwitch = false;
-        });
-        // } else {
-        document
-          .getElementById("nav-icon")
-          .addEventListener("click", function () {
-            navBar.classList.remove("offToggle");
-            mainSec.classList.remove("toggleMain");
-            // toggleSwitch = true;
-            console.log("nav Loaded");
-          });
-        // }
-        console.log("loaded");
-
-        /* Switch Mode From Dark to Ligh Light to Dark */
-        let currentMode = true;
-        let mode = document.getElementById("mode");
-
-        mode.addEventListener("click", function () {
-          if (currentMode == true) {
-            document.getElementById("bdy").classList.add("lightMode");
-            // document.getElementById("container-log").classList.remove("container-log");
-            // document.getElementById("container-log").classList.add("lightMode");
-            let on = document.getElementById("off");
-            on.classList.remove("fa-toggle-off");
-            on.classList.add("fa-toggle-on");
-            currentMode = !currentMode;
-          } else {
-            document.getElementById("bdy").classList.remove("lightMode");
-            // document.getElementById("container-log").classList.remove("lightMode");
-            // document.getElementById("container-log").classList.add("container-log");
-            let on = document.getElementById("off");
-            on.classList.remove("fa-toggle-on");
-            on.classList.add("fa-toggle-off");
-
-            currentMode = true;
-          }
-        });
-      });
-    </script>
+    <!-- <script src="javascript.js"></script> -->
   </body>
 </html>

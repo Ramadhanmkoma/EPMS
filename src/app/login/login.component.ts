@@ -2,7 +2,7 @@ import { Component, Input, Output } from "@angular/core";
 // import { EventEmitter } from "stream";
 
 @Component({
-  selector: "epm-login",
+  // selector: "epm-login",
   templateUrl: '../login/login.component.html',
   styleUrls: ['../login/login.component.css']
 })

@@ -10,17 +10,16 @@ export class NavBar {
 
   navMenu = {
     home: 'Home',
-    services: 'Services',
+    services: 'Evaluate',
+    report: 'Reports',
     about: 'About-us',
     comments: 'Leave a Message',
     tips: 'Help'
   }
 
-  links = {
-    homeUrl: '../homePage/home.component.html',
-    serviceUrl: '',
-    aboutUrl: '',
-    commentUrl: ''
+  mode = {
+    dark: '#1a1a1a',
+    light: '#eee'
   }
 
 }

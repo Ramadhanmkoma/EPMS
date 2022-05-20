@@ -1,37 +1,29 @@
-<span id="nav-icon" style="position: fixed; margin: 1em; color: #f66; cursor: pointer; font-size: 25px;">
-  <i class="fas fa fa-navicon"></i>
-</span>
+<nav-bar></nav-bar>
+<header class="header" id="header">
+  <button id="toggle-menu"><i class="fas fa fa-bars"></i></button>
+  <h1 class="epms-title" id="title">EPMS - Employee Performance Evaluation</h1>
+</header>
 
-<main class="main-container" id="main-con">
-  <nav class="navbar" id="nav-bar">
-    <ul class="list-container">
-      <span class="navicon" id="navicon"><i class="fas fa fa-navicon"></i></span>
-      <h4 style="text-align: center; margin: 1.7em 0; color: #f66">
-        <i class="fas fa fa-bar-chart-o"> </i> EPMS <i class="fas fa fa-group"> </i>
-      </h4>
-      <li class="lists" id="list1"><a href="http://">
-        <i class="fas fa fa-home"> </i> Home</a>
-      </li>
-      <li class="lists" id="list1"><a href="http://">
-        <i class="fas fa fa-book"> </i> Services</a>
-      </li>
-      <li class="lists" id="list1"><a href="http://">
-        <i class="fas fa fa-cube"> </i> About-Us</a>
-      </li>
-      <li class="lists" id="list1">
-        <a href="http://"><i class="fas fa fa-comments"> </i> Leave a Message</a>
-      </li>
-      <li class="lists" id="list1">
-        <a href="http://"><i class="fas fa fa-group"> </i> Help</a>
-      </li>
-      <li class="lists" id="list1">
-        <a href="#" id="mode">
-          <i class="fas fa fa-toggle-off" id="off" style="font-size: 30px;"> </i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- Login Section -->
-  <epm-login id="epm-login"></epm-login>
+<!-- Main section goes here -->
+<main class="main" id="main">
+
+  <router-outlet></router-outlet>
+
 </main>
+<!-- Main section ends here  -->
 
+<!-- Footer Section starts here -->
+<footer class="footer" id="footer">
+  &copy; all rights reserved.
+  <br /><br /><br />
+  <i class="fa fas fa-facebook"></i>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <i class="fa fas fa-twitter"></i>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <i class="fa fas fa-linkedin"></i>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <i class="fa fas fa-github"></i>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <i class="fa fas fa-gitlab"></i>
+</footer>
+<!-- Footer Section ends here -->
