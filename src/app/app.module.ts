@@ -5,9 +5,10 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LoginApp } from './login/login.component';
-import { HomePage } from "./homePage/home.component";
+import { HomePage } from "./home/home.component";
 import { NavBar } from "./navbar/navbar.component";
 import { appRoutes } from './routes';
+import { EvaluateEmployee } from './evaluate/evaluate.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { appRoutes } from './routes';
     AppComponent,
     LoginApp,
     HomePage,
+    EvaluateEmployee,
     NavBar
   ],
   imports: [

@@ -1,28 +1,28 @@
-"use strict"
+// "use strict"
 
-let toggle = document.getElementById('toggle-menu'),
-    navbar = document.getElementById('nav-bar'),
-    mainDivision = document.getElementById('main-div'),
-    navSwitch = true;
+// let toggle = document.getElementById('toggle-menu'),
+//     navbar = document.getElementById('nav-bar'),
+//     mainDivision = document.getElementById('main-div'),
+//     navSwitch = true;
 
 
-let fun = () => {
-    toggle.addEventListener('click', () => {
-        if (navSwitch) {
-            navbar.classList.add('offToggle');
+// let fun = () => {
+//     toggle.addEventListener('click', () => {
+//         if (navSwitch) {
+//             navbar.classList.add('offToggle');
 
-            // mainDivision.style.marginLeft = "0px";
+//             // mainDivision.style.marginLeft = "0px";
 
-            navSwitch = false;    
-        } else {
-            navbar.classList.remove('offToggle');
+//             navSwitch = false;    
+//         } else {
+//             navbar.classList.remove('offToggle');
 
-            // mainDivision.style.marginLeft = "230px";
+//             // mainDivision.style.marginLeft = "230px";
 
-            navSwitch = true;
-        }
+//             navSwitch = true;
+//         }
         
-    });
-};
+//     });
+// };
 
-document.addEventListener('DOMContentLoaded', fun);
+// document.addEventListener('DOMContentLoaded', fun);

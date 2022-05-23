@@ -1,4 +1,5 @@
 @import "~font-awesome/css/font-awesome.min.css";
+
 :root {
     --gapSize: 1em;
     --navColor: #1a1a1a;
@@ -18,7 +19,8 @@
 html, body { height: 100%;  margin: 0; padding: 0;}
 
 body{
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("./assets/224878.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;

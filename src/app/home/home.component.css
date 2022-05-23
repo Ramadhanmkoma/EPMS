@@ -1,0 +1,24 @@
+.home-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  /* border: 10px solid red; */
+  height: 100%;
+  /* align-items: center; */
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.user-details {
+  display: grid;
+  grid: auto-flow / repeat(auto-fit, 25em);
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  /* border: 10px solid blue; */
+}
+
+.box {
+  height: 230px;
+  background-color: rgba(67, 203, 239, 0.7);
+}
