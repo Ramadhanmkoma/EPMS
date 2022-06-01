@@ -1,5 +1,6 @@
 import { Component, Input, Output } from "@angular/core";
 import { appRoutes } from "../routes";
+import { LoginService } from "./login.service";
 // import { EventEmitter } from "stream";
 
 @Component({
@@ -16,7 +17,7 @@ export class LoginApp {
   //   this.eventClick.emit('foo');
   // }
 
-  constructor() {}
+  constructor(private loginService: LoginService) {}
 
   title:string = 'epms';
   subTitle:string = 'performance evaluation';
