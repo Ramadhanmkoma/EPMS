@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Employee Performance Evaluation-EPMS';
+  title = 'EPMS - Employee Performance Evaluation';
 
   ngOnInit():void {
     console.log("In OnInit")

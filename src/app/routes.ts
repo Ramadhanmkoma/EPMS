@@ -9,4 +9,5 @@ export const appRoutes = [
     { path: 'home', component: HomePage },
     { path: 'evaluate', component: EvaluateEmployee },
     { path: '', redirectTo: 'login', pathMatch: 'full' }
-]
+    // { path: '**' redirectTo: 'login' }
+];

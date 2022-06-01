@@ -1,4 +1,5 @@
 import { Component, Input, Output } from "@angular/core";
+import { appRoutes } from "../routes";
 // import { EventEmitter } from "stream";
 
 @Component({
