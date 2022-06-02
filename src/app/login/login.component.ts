@@ -1,4 +1,5 @@
 import { Component, Input, Output } from "@angular/core";
+import { UserInfo } from "../data/user-info";
 import { appRoutes } from "../routes";
 import { LoginService } from "./login.service";
 // import { EventEmitter } from "stream";
@@ -22,10 +23,15 @@ export class LoginApp {
   title:string = 'epms';
   subTitle:string = 'performance evaluation';
 
-  usersForm = {
+  originalaUserInfo: UserInfo = {
     username: '',
-    password: '',
-    formUrl: 'www.google.com',
+    password: ''
+  };
+
+  userInfo: UserInfo = { ...this.originalaUserInfo };
+
+  usersForm = {
+    formUrl: '',
     submit: 'submit'
   }
   // userId = document.getElementById('userId');

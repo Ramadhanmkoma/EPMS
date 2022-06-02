@@ -45,11 +45,21 @@
 
 .box:nth-child(3):hover { box-shadow: 2px 2px 5px #1e1e1e; }
 
-.box > .fas.fa {
+.box > .details > .fas.fa {
   margin-left: .15em;
   font-size: 110px;
   color: aqua;
 }
+
+.info-container { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: left; 
+  gap: .35em;
+  /* justify-content: center; */
+}
+
+.details {display: flex; gap: 1em;}
 
 .box > label {
   font-size: large;

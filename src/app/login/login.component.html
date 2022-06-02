@@ -1,28 +1,44 @@
 <section class="login-sec" id="login-sec">
-  <h1 class="header-con" style="color: #def; text-decoration: none;">User Portal</h1>
-<h1 class="header-con">Login here</h1>
+  <h1 class="header-con" style="color: #def; text-decoration: none">
+    User Portal
+  </h1>
+  <h1 class="header-con">Login here</h1>
   <div class="container-log" id="container-log">
-    <form action="" id="login-form" method="post">
-      <label for=""><i class="fas fa fa-user-o"> </i> Username :</label>
-      <input type="text" name="username" id="userId" placeholder="Username" required /><br />
-      <label for=""><i class="fas fa fa-lock"> </i> Password :</label>
-      <input type="password"
-              name="userPassword"
-              id="passId"
-              pattern="[a-zA-Z][0-9]"
-              [(ngModel)] = "usersForm.password"
-              placeholder="Password" required />
-      <button [type]="usersForm.submit"
-              id="btn-submit">
-              <i class="fas fa fa-sign-in"></i> Login</button>
-              <!-- <button id="btn-submit" type="reset">
+    <form #form="ngForm" id="login-form" method="post">
+      <label for="userId"><i class="fas fa fa-user-o"> </i> Username :</label>
+      <input
+        type="text"
+        name="username"
+        id="userId"
+        placeholder="Username"
+        required
+        [(ngModel)] = "userInfo.username"
+      /><br />
+      <label for="passId"><i class="fas fa fa-lock"> </i> Password :</label>
+      <input
+        type="password"
+        name="uPassword"
+        id="passId"
+        pattern="[a-zA-Z][0-9]"
+        placeholder="Password"
+        required
+        [(ngModel)] = "userInfo.password"
+      />
+      <button [type]="usersForm.submit" id="btn-submit">
+        <i class="fas fa fa-sign-in"></i> Login
+      </button>
+      <!-- <button id="btn-submit" type="reset">
                 <i class="fas fa fa-eraser"></i> Clear</button> -->
-              <!-- *ngIf="showButton1" (keypress) = "toggleButton()" -->
+      <!-- *ngIf="showButton1" (keypress) = "toggleButton()" -->
     </form>
 
-    <label
-      for="password-reset">forgot password? </label
+    <label for="password-reset">forgot password? </label
     ><a href="http://" id="resetPass">click here</a>
-  </div>
-</section>
 
+    <label for="">
+      {{ form.value | json }}
+    </label>
+  </div>
+
+  
+</section>
