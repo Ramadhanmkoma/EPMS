@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
     templateUrl: './evaluate.component.html',
-    styleUrls: ['./evaluate.component.css'],
+    styleUrls: ['./evaluate.component.css']
 })
 
 export class EvaluateEmployee {
