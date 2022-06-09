@@ -4,7 +4,7 @@
   </h1>
   <h1 class="header-con">Login here</h1>
   <div class="container-log" id="container-log">
-    <form #form="ngForm" id="login-form" method="post">
+    <form #form = "ngForm" id="login-form" method="post" (ngSubmit)="onSubmit(form)">
       <label for="userId"><i class="fas fa fa-user-o"> </i> Username :</label>
       <input
         type="text"
@@ -13,7 +13,14 @@
         placeholder="Username"
         required
         [(ngModel)] = "userInfo.username"
+        [class.field-error] = "nameField.invalid && form.submitted"
+        #nameField = "ngModel"
       /><br />
+      <h3 
+      [hidden]="nameField.valid || !form.submitted"
+      style="color: red; border-radius: .3em; padding: .7em 1em; background-color: rgba(200, 80, 80, .3); width: 90%;">
+        Enter a username
+      </h3>
       <label for="passId"><i class="fas fa fa-lock"> </i> Password :</label>
       <input
         type="password"
@@ -23,8 +30,15 @@
         placeholder="Password"
         required
         [(ngModel)] = "userInfo.password"
+        #passField = "ngModel"
+        [class.field-error] = "passField.invalid && form.submitted"
       />
-      <button [type]="usersForm.submit" id="btn-submit">
+      <h3 
+      [hidden]="passField.valid || !form.submitted"
+      style="color: red; border-radius: .3em; padding: .7em 1em; background-color: rgba(200, 80, 80, .3); width: 90%;">
+        Enter a password
+      </h3>
+      <button type="submit" id="btn-submit">
         <i class="fas fa fa-sign-in"></i> Login
       </button>
       <!-- <button id="btn-submit" type="reset">

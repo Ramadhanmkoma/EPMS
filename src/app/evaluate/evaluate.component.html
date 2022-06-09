@@ -1,0 +1,58 @@
+<section class="evaluate-sec" id="eval-sec">
+
+    <div class="btn-container" *ngIf="showButton">
+        <button class="start-eval btn btn-primary" id="start-eval" (click)="displayForm()">Start Evaluation</button>
+    </div>
+
+    <div class="eval-form" id="eval-form" *ngIf="showForm">
+        <section class="form-section table-responsive" id="form-sec">
+            <h3 style="text-align: center;">EMPLOYEE PERFORMANCE EVALUATION FORM</h3>
+            <form class="eval-form" id="eval-form"> 
+                div.emp-info
+
+                <table class="table table-primary table-striped-columns">
+                    <thead class="table table-dark">
+                        <tr align="center">
+                            <th scope="col"></th>
+                            <th scope="col">1 = Poor</th>
+                            <th scope="col">2 = Fair</th>
+                            <th scope="col">3 = Satisfactory</th>
+                            <th scope="col">4 = Good</th>
+                            <th scope="col">5 = Excellent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let evalFm of evalForm" align="center">
+                            <th scope="row">{{ evalFm.quality }}</th>
+                            <td><input type="radio" value="1" name="{{ evalFm.name }}"></td>
+                            <td><input type="radio" value="2" name="{{ evalFm.name }}"></td>
+                            <td><input type="radio" value="3" name="{{ evalFm.name }}"></td>
+                            <td><input type="radio" value="4" name="{{ evalFm.name }}"></td>
+                            <td><input type="radio" value="5" name="{{ evalFm.name }}"></td>
+                        </tr>
+                        <tr align="center">
+                            <td colspan="3">Overall Rating Average</td>
+                            <td colspan="3">
+                                <label for="average" style="font-size: 2em;">0%</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+    </div>
+
+</section>
+
+<style>
+    section.evaluate-sec {
+        /* border: 5px solid red; */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .btn-container { text-align: center; }
+
+    .start-eval { width: 50%; height: 3em; margin: 1em auto; }
+</style>

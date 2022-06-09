@@ -1,4 +1,5 @@
-import { Component, Input, Output } from "@angular/core";
+import { Component, Input, NgModule, Output } from "@angular/core";
+import { NgForm } from "@angular/forms";
 import { UserInfo } from "../data/user-info";
 import { appRoutes } from "../routes";
 import { LoginService } from "./login.service";
@@ -33,6 +34,10 @@ export class LoginApp {
   usersForm = {
     formUrl: '',
     submit: 'submit'
+  }
+
+  onSubmit(form: NgForm) {
+    console.log('form is submitted: ', form.valid);
   }
   // userId = document.getElementById('userId');
   // passId = document.getElementById('passId');

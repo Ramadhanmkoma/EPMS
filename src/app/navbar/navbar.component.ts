@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { AppComponent } from "../app.component";
 
 @Component({
   selector: 'nav-bar',
@@ -6,7 +7,7 @@ import { Component } from "@angular/core";
   styleUrls: ['./navbar.component.css']
 })
 
-export class NavBar {
+export class NavBar extends AppComponent {
 
   navMenu = {
     home: 'Home',

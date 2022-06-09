@@ -10,17 +10,18 @@
     --wishPink: rgb(235, 118, 177);
 }
 
-::-webkit-progress-bar { background-color: #f66; }
+::-webkit-progress-bar { background-color: #f66; scroll-behavior: smooth; }
 
-::-webkit-scrollbar-thumb { background-color: #66f; }
-::-webkit-scrollbar { background-color: #222; width: 5px; }
+::-webkit-scrollbar-thumb { background-color: #66f; scroll-behavior: smooth; }
+::-webkit-scrollbar { background-color: #222; width: 5px; scroll-behavior: smooth; }
 
-* { margin: 0; padding: 0; transition: .5s linear;}
-html, body { height: 100%;  margin: 0; padding: 0;}
+* { margin: 0; padding: 0; transition: .5s linear; }
+html, body { height: 100%;  margin: 0; padding: 0; scroll-behavior: smooth;}
 
 body{
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
     /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("./assets/224878.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,6 +29,7 @@ body{
     background-attachment: fixed;
     background: #1a1a1a;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e1e1e1;
 }
 
 button { cursor: pointer; }

@@ -9,6 +9,7 @@ import { HomePage } from "./home/home.component";
 import { NavBar } from "./navbar/navbar.component";
 import { appRoutes } from './routes';
 import { EvaluateEmployee } from './evaluate/evaluate.component';
+import { Comments } from "./comment/comment.component";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { EvaluateEmployee } from './evaluate/evaluate.component';
     LoginApp,
     HomePage,
     EvaluateEmployee,
-    NavBar
+    NavBar,
+    Comments
   ],
   imports: [
     BrowserModule,

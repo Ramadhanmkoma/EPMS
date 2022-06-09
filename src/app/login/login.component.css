@@ -11,6 +11,10 @@ body {
   --wishDark: #1a1a1a;
 }
 
+.field-error {
+  border: 1px solid red !important;
+}
+
 .login-sec {
   min-height: 100%;
   margin-top: 6em;
