@@ -16,107 +16,103 @@
         <div class="d-grid gap-2 btn btn-success" style="margin: 1em 0">
           <span>Employee Information</span>
         </div>
+
         <!--  -->
-        <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationCustom01"
-            value="Mark"
-            required
-          />
-          <div class="valid-feedback">Looks good!</div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationCustom02"
-            required
-          />
-          <div class="valid-feedback">Looks good!</div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label"
-            >Username</label
-          >
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <div
+          class="flex-container"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 1em;
+            align-items: center;
+          "
+        >
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label"
+              >Employee Name :
+            </label><br />
             <input
               type="text"
               class="form-control"
-              id="validationCustomUsername"
-              aria-describedby="inputGroupPrepend"
+              id="validationCustom01"
+              placeholder="Full Name eg: John Doe"
+              class="btn btn-outline-info"
+              style="cursor: text; text-align: justify"
               required
             />
-            <div class="invalid-feedback">Please choose a username.</div>
+            <!-- <div class="valid-feedback">Looks good!</div> -->
           </div>
-        </div>
-        <div class="col-md-6">
-          <label for="validationCustom03" class="form-label">City</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationCustom03"
-            required
-          />
-          <div class="invalid-feedback">Please provide a valid city.</div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom04" class="form-label">State</label>
-          <select class="form-select" id="validationCustom04" required>
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
-          </select>
-          <div class="invalid-feedback">Please select a valid state.</div>
-        </div>
-        <div class="col-md-3">
-          <!-- <label for="validationCustom05" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-      Please provide a valid zip.
-    </div>
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-    </div> -->
-        </div>
-
-        <!--  -->
-
-        <!-- <div class="emp-info">
-          <div class="emp-inf-container">
-            <label for="e-name" class="form-label">Employee Name : </label>
-            <div class="col-sm-2">
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label"
+              >Job Title :
+            </label><br />
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              placeholder="Job Title eg: Lecturer"
+              class="btn btn-outline-info"
+              style="cursor: text; text-align: justify"
+              required
+            />
+            <!-- <div class="valid-feedback">Looks good!</div> -->
+          </div>
+          <div class="col-md-4">
+            <!-- <label for="validationCustomUsername" class="form-label">DateTime : </label> -->
+            <div class="input-group has-validation">
+              <span class="input-group-text btn btn-info" id="inputGroupPrepend"
+                >Date</span
+              >
               <input
-                type="text"
-                name=""
-                id="e-name"
-                class=""
+                type="datetime-local"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                class="btn btn-outline-info"
+                required
               />
+              <!-- <div class="invalid-feedback">Please choose a username.</div> -->
             </div>
           </div>
-          <div class="emp-inf-container">
-            <label for=""></label>
-            <input type="text" name="" id="" class="form-control" />
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label"
+              >Review Period : </label
+            > <br />
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              placeholder="Review Period"
+              class="btn btn-outline-info"
+              style="cursor: text"
+              required
+            />
+            <!-- <div class="invalid-feedback">Please provide a valid city.</div> -->
           </div>
-          <div class="emp-inf-container">
-            <label for=""></label>
-            <input type="text" name="" id="" class="form-control" />
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label"
+              >Department :
+            </label>
+            <br />
+            <select
+              class="form-select btn btn-outline-info"
+              id="validationCustom04"
+              required
+            >
+              <option selected disabled value="">Choose...</option>
+              <option value="computer science and IT">
+                Computer Science & IT
+              </option>
+              <option value="school of health">Health</option>
+              <option value="mathematics and statistics">Mathematics</option>
+              <option value="natural science">Natural Science</option>
+            </select>
+            <div class="invalid-feedback">Please select a valid state.</div>
           </div>
-          <div class="emp-inf-container">
-            <label for=""></label>
-          </div>
-          <div class="emp-inf-container">
-            <label for=""> <input type="text" name="" id="" /> </label>
-          </div>
-          <label for=""></label>
-          <label for=""></label>
-          <input type="text" name="" id="" />
-        </div> -->
+          <div class="col-md-3"></div>
+        </div>
+        <!-- Bootsrap Form ends here-->
 
         <div
           class="emp-info d-grid gap-2 btn btn-success"
@@ -166,9 +162,18 @@
           <span>Evaluation</span>
         </div>
         <div class="additional comments">
-            <span>{{ "Additional Comments" | uppercase }}</span>
+          <span>{{ "Additional Comments" | uppercase }}</span>
+          <div class="add-info" style="margin: 1em 0">
+            <textarea
+              name="add-info"
+              class="form-control btn btn-dark"
+              style="text-align: justify; cursor: text"
+              id="add-inf"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
         </div>
-        
       </form>
     </section>
   </div>
